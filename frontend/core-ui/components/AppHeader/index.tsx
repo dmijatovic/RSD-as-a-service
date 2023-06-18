@@ -5,6 +5,8 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+"use client"
+
 import {useState, useEffect, MouseEvent} from 'react'
 import IconButton from '@mui/material/IconButton'
 import Menu from '@mui/material/Menu'

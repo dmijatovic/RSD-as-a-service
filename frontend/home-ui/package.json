@@ -3,7 +3,7 @@
   "version": "1.18.1",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001",
+    "dev": "next dev",
     "dev:docker": "NODE_ENV=docker NODE_OPTIONS='--inspect=0.0.0.0:9229' next dev",
     "build": "next build",
     "start": "next start",
@@ -27,7 +27,7 @@
     "aos": "2.3.4",
     "cookie": "0.5.0",
     "jsonwebtoken": "9.0.0",
-    "next": "13.2.3",
+    "next": "13.4.6",
     "nprogress": "0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -35,7 +35,7 @@
     "sharp": "0.31.3"
   },
   "devDependencies": {
-    "@svgr/webpack": "6.5.1",
+    "@svgr/webpack": "8.0.1",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
     "@types/aos": "3.0.4",

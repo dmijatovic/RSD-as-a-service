@@ -20,7 +20,7 @@ import {getMetaPages} from './getMetaPages'
 export async function getRsdSettings() {
   try {
     // node request to localhost to load local json file
-    const url = 'http://localhost:3001/data/settings.json'
+    const url = 'http://localhost/data/settings.json'
     const resp = await fetch(url)
     if (resp.status === 200) {
       const json: RsdSettingsState = await resp.json()

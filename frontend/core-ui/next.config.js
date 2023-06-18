@@ -11,6 +11,7 @@
 const rewritesConfig = require('./next.rewrites')
 const redirectsConfig = require('./next.redirects')
 const securityHeaders = require('./next.headers')
+// const svgloader = require('@svgr/webpack')
 
 module.exports = {
   // create standalone output to use in docker image
@@ -38,6 +39,25 @@ module.exports = {
       },
     ]
   },
+
+  // DOES NOT WORK WITH svg webpack plugin
+  // experimental: {
+  //   turbo: {
+  //     rules: {
+  //       // Option format
+  //       // '.svg': [
+  //       //   {
+  //       //     loader: '@mdx-js/loader',
+  //       //     options: {
+  //       //       format: 'md',
+  //       //     },
+  //       //   },
+  //       // ],
+  //       // Option-less format
+  //       '*.svg': ['@svgr/webpack'],
+  //     },
+  //   },
+  // },
 
   webpack(config) {
     config.module.rules.push({
